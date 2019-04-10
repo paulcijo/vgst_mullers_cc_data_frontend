@@ -81,7 +81,7 @@ DATABASES = {
         'USER': 'vgst_group',
         'PASSWORD': 'VGST',
         'HOST': 'localhost',
-        'PORT': '5432'
+        'PORT': '3306'
     }
 }
 
