@@ -8,7 +8,7 @@ class Family(models.Model):
     address = models.TextField(blank=True)
 
     def __str__(self):
-        return str(self.folder_number) or ''
+        return str(self.folder_number) if self.folder_number else ''
 
 
 class Member(models.Model):
@@ -36,7 +36,7 @@ class Member(models.Model):
     MARITAL_STATUS = (('married', 'married'), ('unmarried', 'unmarried'),('unkown','unknown'))
     GENDER_VALUES = (('male', 'male'), ('female', 'female'), ('other', 'other'))
 
-    name = models.CharField(max_length=255, blank=True)
+    member_name = models.CharField(max_length=255, blank=True)
     age = models.IntegerField(blank=True)
     gender = models.CharField(choices=GENDER_VALUES, max_length=255, default='female')
     relationship_to_head_of_family = models.CharField(
@@ -44,14 +44,14 @@ class Member(models.Model):
     )
     education = models.CharField(max_length=255,blank=True )
     occupation = models.CharField(max_length=255, blank=True)
-    income = models.IntegerField(blank= True)
+    income = models.IntegerField(blank= True, null=True)
     marital_status = models.CharField(max_length=255, choices = MARITAL_STATUS)
     immunization = models.TextField(max_length=255, blank =True)
     remarks = models.TextField(blank = True)
     family = models.ForeignKey(Family, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.name or ''
+        return str(self.member_name) if self.member_name else ''
 
 
 class MedicalRecord(models.Model):
@@ -61,4 +61,4 @@ class MedicalRecord(models.Model):
     date = models.DateField()
 
     def __str__(self):
-        return self.member or ''
+        return self.member.member_name if self.member else ''
