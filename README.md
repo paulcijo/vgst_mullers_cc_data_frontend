@@ -83,4 +83,49 @@ open up your browser and type in the following url:
 ```
 You should be greeted with a login screen. Enter theusername and password you just entered. And you are good to go!
 
-All the besht. :) 
+# COMMON REASONS FOR THE APP TO FAIL:
+
+## MySQL is not running on PORT 3306 or not installed.
+
+The project requires MySQL to be running on that port. Figure out how you can run it there.
+
+##Forgetting to create MySQL User, Database
+
+That's step 2. 
+
+## Not knowing how to cd into the right directories
+
+IF you've lost your way  cd-ing into the wrong directories the app has a simple directory structure.
+Explore the directories above on github to see which folder is where.
+
+## Port 8000 is already occupied.
+If you have some other application on port 8000 the last step will fail.
+
+This is easy to fix.
+
+You ran this line
+
+```bash
+python manage.py runserver 127.0.0.1:8000
+```
+
+the part after the ':' is the port
+
+try a different port 8001, 8002, 8003.
+
+Your command then becomes:
+```bash
+python manage.py runserver 127.0.0.1:8001
+```
+
+You should find some free port on your pc. But it should work on 8000 normally.
+
+subsequently on your browser enter the right port you are running your app on.
+
+```bash
+127.0.0.1:8001/admin
+```
+
+
+
+#All the besht. :) 
