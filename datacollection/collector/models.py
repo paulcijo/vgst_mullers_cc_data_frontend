@@ -37,7 +37,7 @@ class Member(models.Model):
     GENDER_VALUES = (('male', 'male'), ('female', 'female'), ('other', 'other'))
 
     member_name = models.CharField(max_length=255, blank=True)
-    age = models.IntegerField(blank=True)git
+    age = models.IntegerField(blank=True)
     gender = models.CharField(choices=GENDER_VALUES, max_length=255, default='female')
     relationship_to_head_of_family = models.CharField(
         choices=HUMAN_RELATIONSHIPS, max_length=255, default='head'
