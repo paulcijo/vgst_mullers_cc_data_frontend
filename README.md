@@ -89,7 +89,7 @@ You should be greeted with a login screen. Enter theusername and password you ju
 
 The project requires MySQL to be running on that port. Figure out how you can run it there.
 
-##Forgetting to create MySQL User, Database
+## Forgetting to create MySQL User, Database
 
 That's step 2. 
 
@@ -128,4 +128,4 @@ subsequently on your browser enter the right port you are running your app on.
 
 
 
-#All the besht. :) 
+# All the besht. :) 
