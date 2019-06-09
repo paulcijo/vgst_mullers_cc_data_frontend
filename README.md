@@ -42,8 +42,8 @@ Create a User for the Fronted and Let the Application create all the SQL Tables
 Open command prompt in your project folder. (vgst_mullers_cc_data)
 
 ```bash
-python3.7 -m venv venv # create your virtual environment
-venv\bin\activate.bat  # activate virtual environment
+python -m venv venv # create your virtual environment
+venv\Scripts\activate.bat  # activate virtual environment
 pip install -r requirements.txt  # install the dependencies
 ```
 
@@ -54,7 +54,7 @@ After running these commands your dependencies should be installed.
 cd datacollection  # cd into the data collection application
  
 # to create the database tables automagically
-python manage.py migrate collector
+python manage.py makemigrations
 python manage.py migrate
 ``` 
 
