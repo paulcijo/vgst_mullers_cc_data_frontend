@@ -37,7 +37,7 @@ class Member(models.Model):
     GENDER_VALUES = (('male', 'male'), ('female', 'female'), ('other', 'other'))
 
     member_name = models.CharField(max_length=255, blank=True)
-    age = models.IntegerField(blank=True)
+    age = models.IntegerField(blank=True)git
     gender = models.CharField(choices=GENDER_VALUES, max_length=255, default='female')
     relationship_to_head_of_family = models.CharField(
         choices=HUMAN_RELATIONSHIPS, max_length=255, default='head'
@@ -45,7 +45,7 @@ class Member(models.Model):
     education = models.CharField(max_length=255,blank=True )
     occupation = models.CharField(max_length=255, blank=True)
     income = models.IntegerField(blank= True, null=True)
-    marital_status = models.CharField(max_length=255, choices = MARITAL_STATUS)
+    marital_status = models.CharField(max_length=255, choices = MARITAL_STATUS, blank = True)
     immunization = models.TextField(max_length=255, blank =True)
     remarks = models.TextField(blank = True)
     family = models.ForeignKey(Family, on_delete=models.CASCADE)

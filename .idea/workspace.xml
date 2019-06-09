@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="042bbdf6-d135-450e-b806-8bce7076a959" name="Default Changelist" comment="pip istall these">
+    <list default="true" id="042bbdf6-d135-450e-b806-8bce7076a959" name="Default Changelist" comment="Fixed broken members issue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datacollection/collector/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/datacollection/collector/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datacollection/collector/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/datacollection/collector/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,11 +22,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/datacollection/collector/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+            <state relative-caret-position="120">
+              <caret line="39" column="44" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -44,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/datacollection/collector/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+            <state>
+              <caret lean-forward="true" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -53,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/datacollection/datacollection/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-88">
-              <caret line="103" column="6" selection-start-line="94" selection-start-column="6" selection-end-line="103" selection-end-column="6" />
+            <state relative-caret-position="1140">
+              <caret line="76" selection-start-line="76" selection-end-line="85" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -80,16 +79,15 @@
         <option value="$PROJECT_DIR$/datacollection/datacollection/my.cnf" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/datacollection/datacollection/settings.py" />
-        <option value="$PROJECT_DIR$/datacollection/collector/models.py" />
         <option value="$PROJECT_DIR$/datacollection/collector/admin.py" />
+        <option value="$PROJECT_DIR$/datacollection/collector/models.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="16" />
-    <option name="y" value="50" />
-    <option name="width" value="1346" />
-    <option name="height" value="701" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="133" />
+    <option name="width" value="1221" />
+    <option name="height" value="635" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -135,6 +133,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -187,17 +186,23 @@
       <option name="project" value="LOCAL" />
       <updated>1554899404239</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fixed broken members issue">
+      <created>1554998995887</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1554998995887</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="16" y="50" width="1346" height="701" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="25" width="1366" height="743" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2494331" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.24571854" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32867134" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.30456027" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="2" />
       <window_info anchor="bottom" id="Message" order="3" />
@@ -216,7 +221,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="port changed to 3306" />
     <MESSAGE value="pip istall these" />
-    <option name="LAST_COMMIT_MESSAGE" value="pip istall these" />
+    <MESSAGE value="Fixed broken members issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed broken members issue" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/database/setup.sql">
@@ -243,9 +249,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/schema.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -253,27 +256,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/datacollection/collector/models.py">
+    <entry file="file://$PROJECT_DIR$/datacollection/datacollection/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+        <state relative-caret-position="1140">
+          <caret line="76" selection-start-line="76" selection-end-line="85" selection-end-column="1" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/schema.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/datacollection/collector/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+        <state>
+          <caret lean-forward="true" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/datacollection/datacollection/settings.py">
+    <entry file="file://$PROJECT_DIR$/datacollection/collector/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-88">
-          <caret line="103" column="6" selection-start-line="94" selection-start-column="6" selection-end-line="103" selection-end-column="6" />
+        <state relative-caret-position="120">
+          <caret line="39" column="44" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
         </state>
       </provider>
     </entry>
