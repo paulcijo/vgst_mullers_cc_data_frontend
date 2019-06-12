@@ -12,16 +12,16 @@ class FamilyAdmin(admin.ModelAdmin):
 
 
 class MemberAdmin(admin.ModelAdmin):
-    list_display = ('member_name', 'age','education', 'occupation', 'income', 'marital_status',
+    list_display = ('age','education', 'occupation', 'income', 'marital_status',
                     'immunization', 'remarks', 'family')
-    search_fields = ('member_name','family__folder_number')
+    search_fields = ('member_name','family__folder_number',)
     list_filter = ('family',)
 
 
 class MedicalRecordAdmin(admin.ModelAdmin):
     list_display = ('date', 'member', 'clinical_details', 'diagnosis')
     list_filter = ('member', )
-    search_fields = ('member__member_name', 'date')
+    search_fields = ('date',)
 
 
 admin.site.register(Family, FamilyAdmin)

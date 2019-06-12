@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 
 
@@ -15,9 +16,9 @@ class Member(models.Model):
     HUMAN_RELATIONSHIPS = (
         ('head', 'head'),
         ('father', 'father'),
-        ('mother','mother'),
-        ('daughter','daughter'),
-        ('child','child'),
+        ('mother', 'mother'),
+        ('daughter', 'daughter'),
+        ('child', 'child'),
         ('brother', 'brother'),
         ('sister', 'sister'),
         ('grandfather', 'grandfather'),
@@ -33,25 +34,24 @@ class Member(models.Model):
         ('unknown', 'unknown')
     )
 
-    MARITAL_STATUS = (('married', 'married'), ('unmarried', 'unmarried'),('unkown','unknown'))
+    MARITAL_STATUS = (('married', 'married'), ('unmarried', 'unmarried'), ('unkown', 'unknown'))
     GENDER_VALUES = (('male', 'male'), ('female', 'female'), ('other', 'other'))
 
-    member_name = models.CharField(max_length=255, blank=True)
     age = models.IntegerField(blank=True)
     gender = models.CharField(choices=GENDER_VALUES, max_length=255, default='female')
     relationship_to_head_of_family = models.CharField(
         choices=HUMAN_RELATIONSHIPS, max_length=255, default='head'
     )
-    education = models.CharField(max_length=255,blank=True )
+    education = models.CharField(max_length=255, blank=True)
     occupation = models.CharField(max_length=255, blank=True)
-    income = models.IntegerField(blank= True, null=True)
-    marital_status = models.CharField(max_length=255, choices = MARITAL_STATUS, blank = True)
-    immunization = models.TextField(max_length=255, blank =True)
-    remarks = models.TextField(blank = True)
+    income = models.IntegerField(blank=True, null=True)
+    marital_status = models.CharField(max_length=255, choices=MARITAL_STATUS, blank=True)
+    immunization = models.TextField(max_length=255, blank=True)
+    remarks = models.TextField(blank=True)
     family = models.ForeignKey(Family, on_delete=models.CASCADE)
 
     def __str__(self):
-        return str(self.member_name) if self.member_name else ''
+        return str(self.relationship_to_head_of_family) + "-" + str(self.family) if self.relationship_to_head_of_family else ''
 
 
 class MedicalRecord(models.Model):
