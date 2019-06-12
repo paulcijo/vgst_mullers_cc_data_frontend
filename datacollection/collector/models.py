@@ -61,4 +61,4 @@ class MedicalRecord(models.Model):
     date = models.DateField()
 
     def __str__(self):
-        return self.member.member_name if self.member else ''
+        return str(self.member) + "-" + str(self.date) if self.member else ''
